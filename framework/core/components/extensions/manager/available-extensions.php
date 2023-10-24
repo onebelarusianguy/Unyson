@@ -61,7 +61,7 @@ $extensions = array(
 		'download'    => array(
 			'source' => 'github',
 			'opts' => array(
-				'user_repo' => $github_account . '/Unyson-Backups-Extension',
+				'user_repo' => 'onebelarusianguy/Unyson-Backups-Extension',
 			),
 		),
 	),
