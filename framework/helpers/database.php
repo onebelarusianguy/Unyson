@@ -43,7 +43,7 @@ class FW_Db_Options_Model_Settings extends FW_Db_Options_Model {
 			 * if $option_id is 'hello/world/7' this will be array('world', '7')
 			 * if $option_id is 'hello' this will be array()
 			 */
-			'sub_keys' => explode('/', $sub_keys),
+			'sub_keys' => explode('/', $sub_keys ?? ''),
 			/**
 			 * Old option(s) value
 			 */
@@ -204,7 +204,7 @@ class FW_Db_Options_Model_Post extends FW_Db_Options_Model {
 			 * if $option_id is 'hello/world/7' this will be array('world', '7')
 			 * if $option_id is 'hello' this will be array()
 			 */
-			explode('/', $sub_keys),
+			explode('/', $sub_keys ?? ''),
 			/**
 			 * Old post option(s) value
 			 * @since 2.3.3
@@ -390,7 +390,7 @@ class FW_Db_Options_Model_Term extends FW_Db_Options_Model {
 			 * if $option_id is 'hello/world/7' this will be array('world', '7')
 			 * if $option_id is 'hello' this will be array()
 			 */
-			'sub_keys' => explode('/', $sub_keys),
+			'sub_keys' => explode('/', $sub_keys ?? ''),
 			/**
 			 * Old option(s) value
 			 */
@@ -551,7 +551,7 @@ class FW_Db_Options_Model_Customizer extends FW_Db_Options_Model {
 			 * if $option_id is 'hello/world/7' this will be array('world', '7')
 			 * if $option_id is 'hello' this will be array()
 			 */
-			'sub_keys' => explode('/', $sub_keys),
+			'sub_keys' => explode('/', $sub_keys ?? ''),
 			/**
 			 * Old option(s) value
 			 */
